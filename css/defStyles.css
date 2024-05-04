@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+/*GENERAL*/
+
+* {
+    font-family: "Fraunces", serif;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0 auto;
+}
+
+p {
+    color: #040000;
+    font-family: "Lato", serif;
+    line-height: 1.7;
+    padding-bottom: 10px;
+}
+b {
+    font-family: "Lato", serif;
+    font-weight: bold;
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+}
+
+i {
+    font-family: "Lato", serif;
+    font-style: italic;
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style-type: disc;
+    font-family: "Lato", serif;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.links li a:hover{
+    color: #92955C;
+}
+
+.texte-rose {
+    font-family: "Lato", serif;
+    font-weight: bold;
+    color: #d67458;
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 50px;
+    color: #92955C;
+    position: relative;
+    font-weight: bold;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 8px;
+    margin-bottom: -10px;
+    bottom: 0;
+}
+
+/*HEADER*/
+
+.top-page-services, .top-page-quisuisje, .top-page-contact, .top-page-tarifs{
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-page-main{
+    background-image: url("../Images/syberien-chaise.jpg");
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-page-services{
+    background-image: url("../Images/chat-roux-sol.jpg");
+}
+
+.top-page-quisuisje{
+    background-image: url("../Images/siamois-femme.jpg");
+}
+
+.top-page-contact{
+    background-image: url("../Images/chat-ordinateur.jpg");
+}
+
+.top-page-tarifs{
+    background-image: url("../Images/chat-argent.jpg");
+}
+
+header{
+    padding: 0 2rem;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top :0;
+    width: 100%;
+}
+
+/*BARRE DE NAVIGATION*/
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    display:flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.logo-img{
+    width: 35px
+}
+
+#nom-site {
+    font-size: 17px;
+    font-weight: bold;
+    color: #92955C;
+    font-family: "Fraunces", serif;
+}
+.navbar .links{
+    display:flex;
+    gap: 2rem;
+    text-align: end;
+}
+
+.burger-menu-button i {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.burger-menu{
+    display:none;
+    height: 0;
+    position: absolute;
+    left: 14rem;
+    top: 60px;
+    width: 180px;
+    background-color: rgba(0,0,0,0.6);
+    overflow: hidden;
+    text-align: start;
+}
+
+.burger-menu.open {
+    height: 170px;
+}
+
+.burger-menu li{
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 750px){
+    .navbar .links {
+        display: none;
+    }
+    .burger-menu-button i{
+        display: block;
+    }
+    .burger-menu{
+        display:block;
+    }
+}
+
+#dropdown1{
+    background-color: black;
+}
+
+#dropdown1 a{
+    color: white;
+}
+
+#dropdown1 a:hover{
+    background-color: black;
+    color: #92955C;
+}
+
+/*LANDING PAGE*/
+
+.landing-page{
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+    height: 400px;
+    padding: 0 50px;
+}
+
+.big-title{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Fraunces", serif;
+    color: white;
+    margin:-3px;
+    margin-left: 50px;
+    text-shadow: 3px 3px 8px #00000042;
+}
+
+/*MAIN*/
+
+main {
+    min-height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*SECTION BANDEAU*/
+
+.grid-bandeau{
+    margin: 0;
+    background-color:#d67458;
+    padding: 30px;
+    text-align :center;
+}
+
+.button-bandeau{
+    font-family: "Fraunces", serif;
+}
+
+#btn-bandeau{
+    background-color: #92955C;
+    align-items: start;
+}
+
+.grid-bandeau img {
+    width: 75%;
+    margin : 0 auto;
+    display: flex;
+    border-radius: 50%;
+    border : 6px solid white;
+}
+.text-grid-bandeau {
+    display:grid;
+    color: white;
+    font-size: 20px;
+}
+
+/*SECTION SERVICES*/
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80px;
+    color: #d67458;
+}
+
+.texte-services{
+    color: #92955C;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#btn-svc{
+    background-color: #92955C;
+}
+
+.button-services{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: "Fraunces", serif;
+}
+
+/*SECTION TEMOIGNAGES*/
+
+.carousel-slider {
+    height: 600px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.carousel-item{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testimonials img {
+    width: 700px;
+    position: relative;
+}
+
+.testimonials b{
+    color: white;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.testimonials p{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Fraunces", serif;
+    z-index: 2;
+    text-align: left;
+}
+
+/*PAGE TARIFS*/
+
+#card-tarifs-bassetxt, #card-tarifs-hautetxt{
+    background-color: #faf5eb;
+    border-radius: 20px;
+    box-shadow:3px 3px 4px #00000042;
+    text-align: center;
+}
+
+.card-content p {
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+}
+
+#tarif-visite-basse, #tarif-visite-haute{
+    font-weight: bold;
+    color: black;
+    font-size: 35px;
+    font-family: "Fraunces", serif;
+}
+
+.card-content h1 {
+    font-weight: bold;
+    color: #d67458;
+    font-size: 35px;
+    font-family: "Fraunces", serif;
+}
+
+#asterix{
+    text-align: center;
+}
+
+/*PAGE SERVICES*/
+
+.grid-services{
+    background-color: #faf5eb;
+    border-radius: 20px;
+    box-shadow:3px 3px 4px #00000042;
+    margin: 30px;
+    padding: 5px;
+    }
+
+.grid-services-container{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+}
+
+.grid-services img {
+    width: 75%;
+    margin : 0 auto;
+    display: flex;
+}
+
+.text-grid{
+    display:grid;
+}
+
+.texte-services-rose{
+    color: #d67458;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0;
+}
+.flexbox-attention {
+    background-color: #d67458;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px #00000042;
+    margin: 30px;
+    padding: 20px;
+    font-size: 20px;
+}
+.texte-attention{
+    color: white;
+    text-align: center;
+}
+
+/*PAGE QUI SUIS-JE ?*/
+
+.image-row img {
+    width: 75%;
+    margin : 0 auto;
+    display: flex;
+    border-radius: 50%;
+    border : 6px solid #92955C;
+}
+
+.chats-co{
+    display: flex;
+    border-radius: 50%;
+    border : 6px solid #92955C;
+    width: 50%;
+    margin : 0 auto;
+}
+
+.nom-chat{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Fraunces", serif;
+    text-align: center;
+}
+
+.titre-chat{
+    font-size: 20px;
+    font-family: "Fraunces", serif;
+    text-align: center;
+}
+
+
+/*PAGE CONTACT*/
+
+.image-contact img {
+    width: 50%;
+    margin : 0 auto;
+    display: flex;
+}
+
+#row-contacts{
+    display:flex;
+    align-items: center;
+}
+
+.collapsible-header,.collapsible-body{
+    font-size: 20px;
+    font-family: "Lato", serif;
+}
+
+#row-contacts i {
+    color:#d67458;
+}
+
+#titre-contact{
+    font-size: 30px;
+    color: #92955C;
+    font-family: "Fraunces", serif;
+}
+
+/*FOOTER*/
+
+#footer{
+    background-color:#92955C;
+    font-family: "Fraunces", serif;
+}
+.links-footer a:hover{
+    text-decoration: underline;
+}
+.links-footer{
+    display:flex;
+    gap: 2rem;
+    text-align: end;
+}
+
+.CGU{
+    padding:30px;
+}
+.titre-article{
+    font-size: 20px;
+    color:#d67458;
+}
