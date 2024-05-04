@@ -1,0 +1,217 @@
+
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Site Internet Petsitting Margot</title>
+        <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js"></script>
+        <script src="https://kit.fontawesome.com/c6fae724fe.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/defStyles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.2.1/dist/css/materialize.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+<body>
+    <section class="top-page-main">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img class="logo-img" src="Images/Logo2.png" alt="logo du site"/>
+                    <a href="PageAccueil.html" id="nom-site">Margot Catsitting</a>
+                </div>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Tarifs.html">Tarifs</a></li>
+                </ul>
+                <ul class="links">
+                    <li> <a href="Qui-suis-je.html">Qui suis-je ?</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li> <a href="Contact.html">Contact</a></li>
+                </ul>
+                <div class="burger-menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <ul class="links">
+                    <li> <a href="PageAccueil.html">Accueil</a></li>
+                    <li> <a href="Qui-suis-je.html">Qui suis-je ?</a></li>
+                    <li> <a href="Services.html">Services</a></li>
+                    <li> <a href="Tarifs.html">Tarifs</a></li>
+                    <li> <a href="Contact.html">Contact</a></li>
+                    </ul>
+            </div>
+        </header>
+        <div class="landing-page">
+                <p class="big-title">Garde de chats à Saint-Etienne</p>
+        </div>
+    </section>
+
+    <section class="bandeau-margot">
+        <div class="grid-bandeau">
+                <div class="text-grid-bandeau">
+                    <p><b>Bienvenue !🐾</b> <br>
+                        Je suis Margot, une <b>amoureuse des chats depuis toujours</b> et certifiée ACACED.<br>
+                        Je prends soin de vos chats à domicile ou en pension.
+                    </p>
+                </div>
+                <div class="button-bandeau">
+                    <a href="Qui-suis-je.html" id="btn-bandeau" class="btn">Mon parcours</a>
+                </div>
+            </div>
+    </section>
+    <main>
+    <section class="mes-services">
+        <div class="section-title">Mes services</div>
+        <div class="services">
+            <div class="service-item">
+                <i class="fa-regular fa-handshake"></i>
+                <p class="texte-services">Pré-visite</p>
+            </div>
+            <div class="service-item">
+            <i class="fa-solid fa-house"></i>
+            <p class="texte-services">Visite à domicile</p>
+            </div>
+            <div class="service-item">
+            <i class="fa-solid fa-house-user"></i>
+            <p class="texte-services">Pension à mon domicile</p>
+            </div>
+            <div class="service-item">
+            <i class="fa-solid fa-seedling"></i>
+            <p class="texte-services">Les petits plus...</p>
+            </div>
+        </div>
+        <div class="button-services">
+            <a href="Services.html" id="btn-svc" class="btn">En savoir plus</a>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <div class="section-title">Témoignages</div>
+        <div class="carousel carousel-slider" id="carou">
+            <div class="carousel-item">
+                <a href="#one!">
+                    <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="Images/2chatons.jpg"/>
+                </a>
+                <p><b>Remy, Tika et Nala</b><br>
+                    "Très satisfait de cette première expérience.<br>
+                    J’ai beaucoup apprécié le professionnalisme <br>et la gentillesse avec laquelle mes 2 chat ont <br> été gardés et chouchoutés .<br>
+                    C’est bien et très important d’être en confiance."</p>
+            </div>
+            <div class="carousel-item">
+                <a href="#two!">
+                    <img id="img2" onmouseover="setNewImage()" onmouseout="setOldImage()" src="Images/2chatons.jpg">
+                </a>
+                <p><b>Emma, Persille et Knut</b><br>
+                "Très pro et amoureuse des animaux, vos petites bêtes <br>seront entre bonnes mains durant votre absence !
+                    <br>Merci d’avoir rendu visite à nots bébés et de leur avoir <br> apporté un peu de compagnie et de câlins !"</p>
+            </div>
+            <div class="carousel-item">
+                <a href="#three!">
+                    <img id="img3" onmouseover="setNewImage()" onmouseout="setOldImage()" src="Images/chat-jardin.jpg">
+                </a>
+                <p><b>Sylvie et Loucha</b><br>
+                Pour avoir fait appel axu services de Margot deux fois,<br> je ne peux que la recommander à tous ceux qui veulent <br>confier leurs boules de poils préférées entre de bonnes mains.</p>
+            </div>
+            <div class="carousel-item">
+                <a href="#three!">
+                    <img id="img4" onmouseover="setNewImage()" onmouseout="setOldImage()" src="Images/chat-gris-lit.jpg">
+                </a>
+                <p><b>Pierre et Canelle</b><br>
+                Professionnelle et agéable dès le premier contact, <br>
+                    nous avons laissé notre minette les yeux fermés.<br>
+                    Et en plus des messages et photos à chacun de ses<br>
+                    passages. Au top!😺</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <section class="footer">
+        <footer id=footer class="page-footer">
+            <div class="container">
+                <ul class="links-footer">
+                    <li> <a href="Contact.html">Contact</a></li>
+                    <li> <a href="Mentions%20légales.html">Mentions légales</a></li>
+                    <li> <a href="CGU.html">CGU</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2014 Margot Peoc'h
+                </div>
+            </div>
+        </footer>
+    </section>
+
+<!--JavaScript at end of body for optimized loading-->
+    <script>
+        const burgerMenuButton = document.querySelector('.burger-menu-button')
+        const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i')
+        const burgerMenu = document.querySelector('.burger-menu')
+
+        burgerMenuButton.onclick= function(){
+            burgerMenu.classList.toggle('open')
+            const isOpen = burgerMenu.classList.contains('open')
+            burgerMenuButtonIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.2.1/dist/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                fullWidth: true,
+                indicators: true,
+            });
+        });;
+
+        function suivant() {
+            var carousel=document.querySelector("#carou");
+            var instance = M.Carousel.getInstance(carousel);
+            instance.next();}
+
+        setInterval(suivant, 7000);
+
+        function setNewImage()
+        {
+            document.getElementById("img1").src="Images/2chatons-black.jpg";
+            document.getElementById("img2").src="Images/2chats-lit-black.jpg";
+            document.getElementById("img3").src="Images/chat-jardin-black.jpg";
+            document.getElementById("img4").src="Images/chat-gris-lit-black.jpg";
+
+        }
+        function setOldImage()
+        {
+            document.getElementById("img1").src="Images/2chatons.jpg";
+            document.getElementById("img2").src="Images/2chats-lit.jpg";
+            document.getElementById("img3").src="Images/chat-jardin.jpg";
+            document.getElementById("img4").src="Images/chat-gris-lit.jpg";
+        }
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                // specify options here
+            });
+        });
+
+
+
+    </script>
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+    </script>
+    <script>
+
+    </script>
+</body>
+</html>
